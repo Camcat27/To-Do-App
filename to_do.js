@@ -53,3 +53,13 @@ let b = listofTasks.sort();
 console.log(b);
 
 };
+
+// Strike through a task
+
+function strikeThrough() {
+  let b = listofTasks.strike();
+  console.log(b);
+  
+  };
+
+
