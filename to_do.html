@@ -7,18 +7,48 @@
     <title>My To Do App</title>
     <link rel="stylesheet" href="/to_do.css">
 </head>
-<body>
+<body id="Body">
     <br>
     <br>
-    <h1>Welcome to the TO-DO APP</h1>
+    <header>
+        <h1>Welcome to the TO-DO APP</h1>
+        <h4>Enter text and pick a date to begin</h4>
+    </header>
+    <main id="main">
+    <content id="content">
+    <h4>Enter Something!</h4>
+    <div>
     <input type="text" id="Input"></input>
+    <input type="date" id="Inputdate"></input>
+    </div>      
+
+    <div>
     <button id="Button" onclick="addTask()">Add Task</button>
     <button id="Button" onclick="deleteTask()">Delete A Task</button>
     <button id="Button" onclick="sortThrough()">Sort Alphabetically</button>
-    <p id="Para"></p>
-    <ul id="myNewTaskList"></ul>
+    </div>
+    </content>
+
+    <div id="sidebar">
+        <h4>Your List Items</h4>
+        <div>
+        <br>
+        <br>
+        <p id="Para"></p>
+        <ul id="myNewTaskList"></ul>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <h1></h1>
+    </footer>
+    
+
+
+
+    
 
     <script src="/to_do.js"></script>
-    
 </body>
 </html>

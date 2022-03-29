@@ -4,14 +4,16 @@ let listofTasks = [];
 
 function addTask(){
     let newTask = document.getElementById("Input").value;
+    let newDate = document.getElementById("Inputdate").value;
     console.log(newTask);
+    console.log(newDate);
 
     if (newTask === ''){
     alert("Please enter something to add!")
     } else {
         const list = document.createElement("li");
         console.log(list)
-        const x = document.createTextNode(newTask);
+        const x = document.createTextNode(newTask + " " + newDate);
         console.log(x)
         list.appendChild(x);
         console.log(x)
@@ -47,5 +49,7 @@ function deleteTask(){
 // Sort through Tasks alphabetically
 
 function sortThrough() {
+let b = listofTasks.sort();
+console.log(b);
 
 };
